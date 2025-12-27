@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository.
 
 I’m a Full-Stack Developer focused on building scalable, secure, and user-friendly web applications using modern technologies.
 
-🌐 **Live Portfolio:** https://your-portfolio-link.com  
+🌐 **Live Portfolio:** https://muhammad-ali-portfolio-tr8i.vercel.app/
 📧 **Email:** artbymali770@gmail.com
 💼 **LinkedIn:** https://www.linkedin.com/in/muhammad-ali-717255386/ 
 
