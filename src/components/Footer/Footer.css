@@ -1,0 +1,260 @@
+.footer {
+    margin: auto;
+    width: calc(100% - 25px);
+    padding-top: 100px;
+    padding-bottom: 12.5px; /* Half of 25px to match the side spacing */
+}
+
+.footerContainer {
+    height: 700px;
+    height: clamp(550px, 73.5vh, 900px);
+    margin: auto;
+    background-color: #1C1D20;
+    /* background-color: #1E1F24; */
+    padding: 20px;
+    border-radius: 0px;
+}
+
+.footerContent {
+    width: 80%;
+    margin: auto;
+    padding-top: 120px;
+    padding-top: clamp(80px, 13vh, 160px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContentTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTextTop {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footerTextTop img{
+    height: 70px;
+}
+
+.footerText h3 {
+    color: white;
+    font-family: inter;
+    font-size: 90px;
+    font-size: clamp(60px, 4.7vw, 110px);
+    font-weight: 500;
+    margin-right: 10px;
+    line-height: 1.15;
+}
+
+.footerTextTop {
+    display: flex;
+}
+
+.footerButton button {
+    background: #F5693C;
+    background: #4F6DFF;
+    border: none;
+    font-family: inter;
+    width: 180px;
+    width: clamp(150px, 9.4vw, 220px);
+    height: 180px;
+    height: clamp(150px, 9.4vw, 220px);
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 50px;
+    bottom: -130px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.footerButton button:hover {
+    background: #3853d6;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: white;
+    margin-top: 50px;
+}
+
+.footerContentBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.email p {
+    font-family: inter;
+    color: white;
+    font-size: 19px;
+    font-size: clamp(18px, 1vw, 22px);
+}
+
+.email button {
+    background: white;
+    color: #1C1D20;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 27px;
+    cursor: pointer;
+    font-family: inter;
+    font-size: 18px;
+    font-size: clamp(17px, 1vw, 22px);
+    font-weight: 500;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom p {
+    font-family: inter;
+    font-size: 16px;
+    font-size: clamp(15.5px, .84vw, 18px);
+    color: white;
+    font-weight: 300;
+}
+
+.socialsLink {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.socialsLink a {
+    text-decoration: none;
+}
+
+.socialsLink li a {
+    font-family: inter;
+    color: rgb(206, 206, 206);
+    font-size: clamp(15.5px, .84vw, 18px);
+}
+
+.links p {
+    display: none;
+}
+
+@media (max-width: 599px) {
+    .footer {
+        width: 100% !important;
+        padding-bottom: 0;
+    }
+
+    .footerContainer {
+        border-radius: 0 !important;
+    }
+    .footerContent{
+        width: 100%;
+    }
+
+    .footerContentTop {
+        /* display: none; */
+    }
+
+    .footerTextTop {
+        gap: 15px;
+    }
+
+    .footerTextTop img{
+        height: 35px;
+    }
+
+    .footerText h3 {
+        font-size: clamp(20px, 11vw, 60px);
+    }
+
+    .footerButton button {
+        width: clamp(100px, 32vw, 150px);
+        height: clamp(100px, 32vw, 150px);
+        font-size: 18px;
+        bottom: -120px;
+        right: 30px;
+    }
+
+    .line {
+        margin-top: 60px;
+    }
+
+    .email {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-top: 90px;
+    }
+
+    .email p {
+        font-size: clamp(14px, 4vw, 18px);
+    }
+
+    .email button {
+        font-size: clamp(14px, 4vw, 18px);
+        font-weight: 400;
+        padding: 10px 20px;
+    }
+
+    .bottom {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .bottom::before {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 32px;
+        width: 100%;
+        height: 1px;
+        background: rgb(255, 255, 255);
+    }
+
+    .links {
+        position: relative;
+    }
+
+    .links p{
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgb(206, 206, 206);
+        padding-bottom: 10px;
+    }
+
+    .links li {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .bottom > p {
+        padding-top: 10px;
+        font-size: 14px;
+        position: relative;
+    }
+
+
+}

@@ -1,0 +1,142 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 20px 20px 20px;
+  background: #1C1D20;
+}
+
+.contactContainer {
+  width: 95%;
+  height: 100%;
+  border-radius: 30px;
+
+  /* Glass effect */
+  background: #23242A;
+}
+
+.contactContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contactContent h1 {
+  font-family: inter;
+  font-size: clamp(40px, 5.5vw, 100px);
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contactContent p {
+  font-family: inter;
+  font-size: clamp(16px, 2vw, 20px);
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.gmailButton {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 50px;
+  padding: clamp(16px, 1.2vw, 20px) clamp(24px, 3vw, 50px);
+  border: 1px solid white;
+  color: white;
+  font-family: inter;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gmailButton:hover {
+  background: white;
+  color: #1C1D20;
+}
+
+.gmailButton span {
+  height: 35px;
+}
+
+.gmailButton span svg{
+    transform: rotate(-140deg);
+    font-size: 35px;
+}
+
+.contactBottom {
+  padding-top: 18px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactBottom p {
+  font-family: inter;
+  color: white;
+}
+
+.contactSocial {
+  display: flex;
+  gap: 40px;
+}
+
+.contactSocial li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inter;
+  color: white;
+}
+
+@media (max-width: 599px) {
+
+  .contact {
+    padding: 70px 0 0 0;
+    height: 95vh;
+  }
+
+  .contactContainer {
+    height: 80%;
+  }
+
+  .contactContent p {
+    font-size: clamp(10px, 3.7vw, 20px);
+    margin-bottom: 10px;
+  }
+
+  .gmailButton {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .gmailButton span {
+    height: 26px;
+  }
+
+  .gmailButton span svg{
+    transform: rotate(-140deg);
+    font-size: 26px;
+  } 
+
+  .contactBottom p  {
+    font-size: 12px;
+  }
+
+  .contactSocial {
+    gap: 20px;
+  }
+
+  .contactSocial li a {
+    font-size: 12px;
+  }
+}

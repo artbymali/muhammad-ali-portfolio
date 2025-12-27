@@ -1,0 +1,24 @@
+.advTextContainer {
+    padding-top: 150px;
+    width: 78%;
+    margin: auto;
+}
+
+.advTextContainer h1{
+    font-family: inter;
+    font-size: 65px;
+    font-size: clamp(60px, 4vw, 80px);
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (max-width: 599px){
+    .advTextContainer {
+        padding-top: 175px;
+        width: 95%;
+    }
+
+    .advTextContainer h1{
+        font-size: clamp(30px, 10vw, 50px);
+    }
+}

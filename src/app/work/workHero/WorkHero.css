@@ -1,0 +1,184 @@
+.workHero {
+    width: 95%;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.workHeroContainer {
+    width: 88%;
+    margin: auto;
+}
+
+.workHeroHeading {
+    padding-bottom: 50px;
+}
+
+.workHeroHeading p {
+    width: 34%;
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.workHeroHeading h2 {
+    font-family: inter;
+    font-size: 48px;
+    font-size: clamp(32px, 3vw, 75px);
+    font-weight: 500;
+    position: relative;
+}
+
+.workHeroHeading h2::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #d4d4d4;
+}
+
+.workHeroContent button{
+    padding: 16px 45px;
+    font-family: inter;
+    font-size: 20px;
+    color: white;
+    background: #1C1D20;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.workCard {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.workCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -300px;
+    border-radius: 20px;
+}
+
+.workCard::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.workHeroContent a {
+    text-decoration: none;
+}
+
+.workHeroContent a h3 {
+    font-family: inter;
+    color: black;
+    display: block;
+    font-size: 30px;
+    margin-top: 18px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.workHeroContent a h3 span {
+    height: 35px;
+}
+
+.workHeroContent a h3 span svg{
+    transform: rotate(-140deg);
+    font-size: 35px;
+}
+
+.cardInfo {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cardInfo::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    height: 1px;
+    background: #CCC;
+}
+
+.cardInfo p {
+    display: block;
+    font-family: inter;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #555;
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+    .workCard img {
+        width: 140%;
+        object-fit: cover;
+        object-position: -100px 0px;
+    }
+}
+
+@media (max-width: 599px) {
+    .workHero {
+        padding-top: 150px;
+    }
+
+    .workHeroContainer {
+        width: 95%;
+    }
+
+    .workHeroHeading {
+        padding-bottom: 40px;
+    }
+
+    .workHeroHeading p {
+        font-size: 15px;
+    }
+
+    .workHeroHeading h2 {
+        font-size: clamp(15px, 8vw, 40px);
+    }
+
+    .workHeroHeading h2::after {
+        bottom: -20px;
+    }
+
+    .workHeroContent button {
+        padding: 14px 35px;
+        font-size: 18px;
+    }
+
+    .workCard {
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .workCard img {
+        width: 200%;
+        object-fit: cover;
+        object-position: -150px clamp(-120px, -30vh, 150px);
+    }
+
+    .workHeroContent a h3 {
+        font-size: 22px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

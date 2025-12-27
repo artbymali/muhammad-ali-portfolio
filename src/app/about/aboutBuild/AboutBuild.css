@@ -1,0 +1,28 @@
+.box {
+    width: 95%;
+    background: #1e1e1e;
+    margin: auto;
+}
+
+.boxContainer {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxContainer h3 {
+    font-family: inter;
+    font-size: 32px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.boxContainer p {
+    font-family: inter;
+    color: white;
+}

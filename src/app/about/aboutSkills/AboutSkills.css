@@ -1,0 +1,72 @@
+.Skills {
+    width: 95%;
+    margin: auto;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.skillsHeading {
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.skillsHeading h2{
+    font-family: inter;
+    font-size: 50px;
+    color: #1E1E1E;
+}
+
+.skillsHeading p {
+    font-family: inter;
+    
+}
+
+.SkillsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.SkillsSet {
+    /* padding-bottom: 25px; */
+}
+
+.SkillsSet h3 {
+    font-family: inter;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.SkillsRow {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skillImage {
+    width: 100px;
+}
+
+.skill img {
+    width: 55px;
+    padding-bottom: 5px;
+}
+
+.Mongo img{
+    width: 28px;
+}
+
+.Fire img{
+    width: 45px;
+}
+
+.skill p {
+    font-family: inter;
+    font-size: 15px;
+}

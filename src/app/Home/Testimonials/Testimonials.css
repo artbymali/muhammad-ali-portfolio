@@ -1,0 +1,183 @@
+.testimonial{
+    padding-top: 120px;
+    padding-top: clamp(90px, 12.5vh, 140px);
+    width: 100%;
+}
+
+.testimonialContainer {
+    width: calc(82%);
+    margin: auto;
+}
+
+.testimonialHeading {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.testimonialHeading h2 {
+    font-family: inter;
+    font-size: clamp(55px, 3.2vw, 75px);
+}
+
+.testimonialContent {
+    width: 100%;
+    /* height: 600px; */
+    height: clamp(535px, 62vh, 750px);
+    background: #E8E8E8;
+    border-radius: 20px;
+    /* padding: 50px 100px; */
+    padding: clamp(30px, 5.2vh, 60px) clamp(40px, 8vw, 100px);
+}
+
+.testimonialCard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonialCardTop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+.cardCricle {
+    width: 90px;
+    height: 90px;
+    background: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCricle h2 {
+    font-family: inter;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.testimonialCardInfo {
+    text-align: center;
+}
+
+.testimonialCardInfo h3 {
+    font-family: inter;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.testimonialCardInfo p {
+    font-family: inter;
+    font-size: 18px;
+    color: rgb(92, 92, 92);
+}
+
+.testimonialCardContent {
+    flex: 1;
+}
+
+.testimonialCardContent p {
+    font-family: inter;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 23px;
+    font-size: clamp(21px, 1.2vw, 26px);
+    text-align: center;
+    color: #555;
+}
+
+.testimonialCardBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratings p {
+    font-family: inter;
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+}
+
+.ratings img {
+    width: 22px;
+    height: 22px;
+    margin: 0 3px;
+}
+
+.cardLogo {
+    height: clamp(40px, 3.2vw, 70px);
+}
+
+.cardLogo img {
+    width: clamp(40px, 3.2vw, 70px);
+    height: clamp(40px, 3.2vw, 70px);
+}
+
+@media (max-width: 600px) {
+    .testimonialContainer {
+        width: 90%;
+    }
+
+    .testimonialContent {
+        height: clamp(500px, 60vh, 750px);
+        padding: clamp(20px, 4vh, 40px) clamp(10px, 3vw, 50px);
+        padding-bottom: 3vh;
+    }
+
+    .testimonialCardTop {
+        padding-bottom: 35px;
+    }
+
+    .testimonialHeading {
+        /* text-align: center; */
+    }
+
+    .testimonialHeading h2 {
+        font-size: clamp(20px, 10vw, 60px);
+    }
+
+    .cardCricle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cardCricle h2 {
+        font-size: 35px;
+    }
+
+    .testimonialCardInfo h3 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    .testimonialCardInfo p {
+        font-size: 15px;
+    }
+
+    .testimonialCardContent p  {
+        font-size: clamp(10px, 4vw, 22px);
+    }
+
+    .ratings p {
+        font-size: 30px;
+    }
+
+    .ratings img {
+        width: 18px;
+        height: 18px;
+    }
+}
