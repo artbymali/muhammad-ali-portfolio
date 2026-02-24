@@ -31,6 +31,6 @@ function Contact() {
       </motion.div>
     </section>
   );
-}
+}//
 
 export default Contact

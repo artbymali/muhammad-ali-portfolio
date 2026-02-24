@@ -15,13 +15,27 @@ function WorkHero() {
         </div>
         <div className="workHeroContent">
           <button>All</button>
-          <div className="workCard">
-            <img src="./cataloggg.webp" alt="catalog" />
-          </div>
-          <a href="https://alchemixadvisors.com/" target='_blank'><h3>ALCHEMIX ADVISORS <span><IoMdArrowDown/></span></h3></a>
-          <div className="cardInfo">
-            <p>Design & Development</p>
-            <p>2025</p>
+          <div className="cardParent">
+            <div className="card">
+              <div className="workCard">
+                <img src="./cataloggg.webp" alt="catalog" />
+              </div>
+              <a href="https://alchemixadvisors.com/" target='_blank'><h3>ALCHEMIX ADVISORS <span><IoMdArrowDown/></span></h3></a>
+              <div className="cardInfo">
+                <p>Design & Development</p>
+                <p>2025</p>
+              </div>
+            </div>
+            <div className="card">
+              <div className="workCard">
+                <img src="./catto.jpg" alt="catalog" />
+              </div>
+              <a href="https://chromewebstore.google.com/detail/cdieinmhbcomhkhmackkpgngaecijnpe?utm_source=item-share-cb/" target='_blank'><h3>TYPBLE <span><IoMdArrowDown/></span></h3></a>
+              <div className="cardInfo">
+                <p>Design & Development</p>
+                <p>2026</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
